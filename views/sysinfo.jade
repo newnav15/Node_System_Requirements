@@ -1,0 +1,13 @@
+extends ./layout
+block content	
+	h3 System Information
+	table.form_table(align='left', cellpadding='15', cellspacing='15', border='1')
+		each key,val in sysInfo
+			tr
+				td <b>#{val}</b>
+				td #{key}
+	table.form_table(align='left', cellpadding='15', cellspacing='15', border='1')
+		each key,val in modules
+			tr
+				td <b>#{val}</b>
+				td #{key}
